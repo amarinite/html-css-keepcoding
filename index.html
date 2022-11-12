@@ -15,7 +15,7 @@
   <body>
     <header>
       <img src="images/rowlet-i.jpg" alt="rowlet logo" />
-      <i class="fa-solid fa-bars"></i>
+      <button><i class="fa-solid fa-bars"></i></button>
       <nav>
         <ul>
           <li><a>Link 1</a></li>
@@ -57,18 +57,54 @@
           <input type="text" id="lname" name="lname" />
           <label for="phone">Phone number:</label>
           <input type="tel" id="phone" name="phone" />
+
+          <label for="find-me">How did you find me?</label>
+          <div class="find-me">
+            <input
+              type="radio"
+              id="university"
+              name="find-me"
+              value="University"
+            />
+            <label for="university">University</label>
+          </div>
+          <div class="find-me">
+            <input
+              type="radio"
+              id="keepcoding"
+              name="find-me"
+              value="Keepcoding kick-off"
+            />
+            <label for="keepcoding">Keepcoding kick-off</label>
+          </div>
+          <div class="find-me">
+            <input type="radio" id="school" name="find-me" value="School" />
+            <label for="school">School</label>
+          </div>
+
+          <label for="github">Github</label>
+          <input type="text" id="github" name="github" />
+          <label for="comments">Description</label>
+          <textarea id="comments" name="comments">
+Enter your comments.</textarea
+          >
+          <button type="submit">Submit</button>
         </form>
       </section>
       <footer>
         <ul>
           <li>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
           </li>
           <li>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </li>
         </ul>
       </footer>

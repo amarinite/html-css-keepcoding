@@ -19,7 +19,7 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 1.7rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 /* HEADER */
@@ -35,6 +35,12 @@ header {
 header img {
   border-radius: 50%;
   height: 3rem;
+}
+
+header button {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
 }
 
 header i {
@@ -64,14 +70,13 @@ section {
 
 .intro {
   align-items: center;
-
   text-align: center;
-  gap: 1rem;
 }
 
 .intro img {
   border: 5px solid var(--main-color);
   border-radius: 50%;
+  margin-bottom: 2rem;
 }
 
 .intro .main-text {
@@ -97,32 +102,78 @@ section {
   font-weight: 700;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
+  margin-bottom: 0.5rem;
 }
 
 #html {
   background-color: rgb(24, 186, 227);
-  width: 90%;
+  animation: fillbar90 2s forwards;
 }
 
 #css {
   background-color: rgb(176, 6, 97);
-  width: 70%;
+  animation: fillbar70 2s forwards;
 }
 
 #js {
   background-color: rgb(236, 143, 37);
-  width: 60%;
+  animation: fillbar60 2s forwards;
 }
 
 #python {
   background-color: rgb(6, 176, 46);
-  width: 60%;
+  animation: fillbar60 2s forwards;
+}
+
+@keyframes fillbar90 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes fillbar70 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes fillbar60 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* FOOTER */
 
+footer {
+  margin-bottom: 2rem;
+}
+
 footer ul {
   display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  font-size: 1.5rem;
 }
 
 footer ul i {
