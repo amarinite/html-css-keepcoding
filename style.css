@@ -2,6 +2,7 @@
 
 :root {
   --main-color: rgb(26, 125, 84);
+  --secondary-color: rgb(40, 183, 135);
   --text-color: rgb(54, 54, 54);
 }
 
@@ -161,6 +162,34 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+form input {
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+}
+
+form textarea {
+  height: 8rem;
+  padding: 1rem;
+  background: none;
+  border: 1px solid var(--text-color);
+}
+
+form button {
+  margin: 1rem 2rem 0 2rem;
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  background-color: var(--main-color);
+}
+
+form button:active {
+  background-color: var(--secondary-color);
 }
 
 /* FOOTER */
