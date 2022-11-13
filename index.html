@@ -18,14 +18,14 @@
       <button><i class="fa-solid fa-bars"></i></button>
       <nav>
         <ul>
-          <li><a>Link 1</a></li>
-          <li><a>Link 2</a></li>
-          <li><a>Link 3</a></li>
+          <li><a href="#intro">About me</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
     </header>
     <div class="container">
-      <section class="intro">
+      <section class="intro" id="intro">
         <img src="images/rowlet.png" alt="rowlet" />
         <div class="main-text">
           <h1>Hi! I'm <span>Rowlet</span></h1>
@@ -35,7 +35,7 @@
           </p>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="languages">
         <h2>Languages</h2>
         <div class="languages">
           <p>HTML</p>
@@ -48,15 +48,15 @@
           <div class="language" id="python">60%</div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Contact me!</h2>
         <form action="">
           <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" />
+          <input type="text" id="fname" name="fname" required />
           <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" />
+          <input type="text" id="lname" name="lname" required />
           <label for="phone">Phone number:</label>
-          <input type="tel" id="phone" name="phone" />
+          <input type="tel" id="phone" name="phone" required />
 
           <label for="find-me">How did you find me?</label>
           <div class="find-me">

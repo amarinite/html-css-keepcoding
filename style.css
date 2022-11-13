@@ -53,6 +53,22 @@ nav {
   display: none;
 }
 
+nav ul {
+  color: white;
+  font-weight: 500;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
 /* SECTIONS */
 
 section {
@@ -207,4 +223,59 @@ footer ul {
 
 footer ul i {
   color: var(--main-color);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+  section {
+    width: 500px;
+    margin: 2rem auto;
+  }
+
+  header button {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    width: 700px;
+    margin: 2rem auto;
+  }
+
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    padding: 8rem 0;
+  }
+
+  .skills,
+  .contact {
+    flex-direction: row;
+    padding-bottom: 8rem;
+  }
+
+  .skills h2,
+  .languages,
+  .contact h2,
+  .contact form {
+    width: 100%;
+  }
+
+  .contact form {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
 }
